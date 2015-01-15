@@ -50,22 +50,22 @@ NSInteger selectedPhotoIndex;
 {
     
     [collectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
-        selectedPhotoIndex = indexPath.row;
+    selectedPhotoIndex = indexPath.row;
     NSLog(@"%li", selectedPhotoIndex);
-
+    
     [self performSegueWithIdentifier:@"fullAttachShow" sender:nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"fullAttachShow"]){
-//        NSIndexPath *path = [NSIndexPath indexPathWithIndex:selectedPhotoIndex];
-//        [self collectionView:collectionView didSelectItemAtIndexPath:path];
+        //        NSIndexPath *path = [NSIndexPath indexPathWithIndex:selectedPhotoIndex];
+        //        [self collectionView:collectionView didSelectItemAtIndexPath:path];
         DetailShowViewController *detailViewController = segue.destinationViewController;
         detailViewController.fullImage = selectedPhotoIndex;
         NSLog(@"%li", (long)detailViewController.fullImage);
-      //  NSLog(@"%li", detailViewController.fullImage);
-
+        //  NSLog(@"%li", detailViewController.fullImage);
+        
     }
 }
 

@@ -7,7 +7,6 @@
         <!--Diary-->
         <scene sceneID="ih8-sq-fSE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g4e-vC-UYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="YvB-ac-jG3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Diary" id="Mmn-Xa-11Z">
                         <barButtonItem key="rightBarButtonItem" title="Notepad" id="v77-Ic-gfL">
@@ -17,6 +16,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4e-vC-UYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1906.5" y="895"/>
         </scene>
@@ -29,6 +29,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JSZ-ey-Qtk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gDn-ry-9ym">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -47,6 +48,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3gK-RK-ViQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VCG-kR-lrB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="37t-ZX-imX">
@@ -85,6 +87,7 @@
                         <viewControllerLayoutGuide type="bottom" id="p54-on-maV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PXg-qN-dkm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Текст Заметки" translatesAutoresizingMaskIntoConstraints="NO" id="YlA-ie-HzV">
@@ -139,6 +142,7 @@
             <objects>
                 <collectionViewController id="NdA-aP-sak" customClass="CollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="42W-2N-asi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cwk-gx-7pw">
                             <size key="itemSize" width="140" height="140"/>
@@ -173,9 +177,6 @@
                                         <include reference="dSD-HD-pZO"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="lJt-CE-mdW" kind="push" identifier="fullAttachShow" id="5Dh-vo-pEf"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -184,6 +185,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="GAg-ME-s94"/>
+                    <connections>
+                        <segue destination="lJt-CE-mdW" kind="push" identifier="fullAttachShow" id="25u-cM-nQv"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVF-mg-Qwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +202,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OdY-9P-M6N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kga-Ni-mvI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -224,6 +229,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EBY-Wq-U5v"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="92w-ai-uZo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iZr-U0-Dnb">
