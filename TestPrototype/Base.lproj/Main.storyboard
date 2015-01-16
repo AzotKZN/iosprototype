@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Kg-0w-3Do">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Diary-->
@@ -180,32 +181,29 @@
                                     <rect key="frame" x="7" y="99" width="400" height="246"/>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeo-0t-C8n">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-lb-5aa">
+                                <rect key="frame" x="510" y="28" width="74" height="30"/>
                                 <state key="normal" title="Вложения">
-                                    <color key="titleColor" red="0.80602904040000001" green="0.0" blue="0.10467735359999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="266" y="72" width="118" height="30"/>
-                                </variation>
                                 <connections>
-                                    <segue destination="NdA-aP-sak" kind="push" id="iPL-XE-VGC"/>
+                                    <segue destination="NdA-aP-sak" kind="push" id="A0e-0z-jsk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nBW-lb-5aa" secondAttribute="trailing" constant="20" id="Xnt-K3-FMg"/>
+                            <constraint firstItem="nBW-lb-5aa" firstAttribute="top" secondItem="0gO-Z0-1d0" secondAttribute="bottom" constant="8" id="nns-c2-qsX"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="YlA-ie-HzV"/>
-                                <exclude reference="xeo-0t-C8n"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="YlA-ie-HzV"/>
-                                <include reference="xeo-0t-C8n"/>
                             </mask>
                         </variation>
                     </view>
