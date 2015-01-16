@@ -34,6 +34,9 @@
 		9225B60C1A5ED5270084A06E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9225B60B1A5ED5270084A06E /* Images.xcassets */; };
 		9225B60F1A5ED5270084A06E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9225B60D1A5ED5270084A06E /* LaunchScreen.xib */; };
 		9225B61B1A5ED5270084A06E /* TestPrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9225B61A1A5ED5270084A06E /* TestPrototypeTests.m */; };
+		92D84F6E1A6806040090CDC2 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D84F6D1A6806040090CDC2 /* DataViewController.m */; };
+		92D84F741A680C2C0090CDC2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D84F731A680C2C0090CDC2 /* RootViewController.m */; };
+		92D84F771A68338D0090CDC2 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D84F761A68338D0090CDC2 /* ModelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,12 @@
 		9225B6141A5ED5270084A06E /* TestPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9225B6191A5ED5270084A06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9225B61A1A5ED5270084A06E /* TestPrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPrototypeTests.m; sourceTree = "<group>"; };
+		92D84F6C1A6806040090CDC2 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		92D84F6D1A6806040090CDC2 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		92D84F721A680C2C0090CDC2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		92D84F731A680C2C0090CDC2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		92D84F751A68338D0090CDC2 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		92D84F761A68338D0090CDC2 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,15 +156,21 @@
 				920205F91A666EDB00487568 /* NoteViewController.m */,
 				920205FB1A666EDB00487568 /* NoteViewController.h */,
 				920205FD1A666EDB00487568 /* DiaryViewController.m */,
-				920205FE1A666EDB00487568 /* Nature.jpeg */,
 				920205FF1A666EDB00487568 /* CalendarViewController.h */,
 				920206001A666EDB00487568 /* DiaryViewController.h */,
 				9225B6021A5ED5270084A06E /* AppDelegate.h */,
 				9225B6031A5ED5270084A06E /* AppDelegate.m */,
 				9225B6051A5ED5270084A06E /* ViewController.h */,
 				9225B6061A5ED5270084A06E /* ViewController.m */,
+				92D84F6D1A6806040090CDC2 /* DataViewController.m */,
+				92D84F6C1A6806040090CDC2 /* DataViewController.h */,
+				92D84F761A68338D0090CDC2 /* ModelController.m */,
+				92D84F751A68338D0090CDC2 /* ModelController.h */,
+				92D84F731A680C2C0090CDC2 /* RootViewController.m */,
+				92D84F721A680C2C0090CDC2 /* RootViewController.h */,
 				9225B60B1A5ED5270084A06E /* Images.xcassets */,
 				9225B60D1A5ED5270084A06E /* LaunchScreen.xib */,
+				920205FE1A666EDB00487568 /* Nature.jpeg */,
 				920205EF1A666EDB00487568 /* 10.jpg */,
 				920205F01A666EDB00487568 /* 9.jpg */,
 				920205F11A666EDB00487568 /* 8.jpg */,
@@ -312,12 +327,15 @@
 				920206051A666EDB00487568 /* CalendarViewController.m in Sources */,
 				9225B6041A5ED5270084A06E /* AppDelegate.m in Sources */,
 				920206011A666EDB00487568 /* CollectionViewController.m in Sources */,
+				92D84F6E1A6806040090CDC2 /* DataViewController.m in Sources */,
 				920206161A666F3000487568 /* DetailShowViewController.m in Sources */,
 				920206031A666EDB00487568 /* ShowDeatailViewController.m in Sources */,
 				9225B6011A5ED5270084A06E /* main.m in Sources */,
+				92D84F741A680C2C0090CDC2 /* RootViewController.m in Sources */,
 				920206021A666EDB00487568 /* PageContentViewController.m in Sources */,
 				920206121A666EDB00487568 /* DiaryViewController.m in Sources */,
 				920206101A666EDB00487568 /* NoteViewController.m in Sources */,
+				92D84F771A68338D0090CDC2 /* ModelController.m in Sources */,
 				920206041A666EDB00487568 /* FullAtachViewController.m in Sources */,
 				920206111A666EDB00487568 /* NotepadViewController.m in Sources */,
 			);
